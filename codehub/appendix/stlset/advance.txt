@@ -1,0 +1,13 @@
+set\_intersection(first1,last1,first2,last2,d\_first,comp)
+\par	first1, last1	-	要检验的第一元素范围
+\par	first2, last2	-	要检验的第二元素范围
+\par	d\_first	-	输出范围的起始
+\par	comp	-	比较函数对象（即满足比较 (Compare) 概念的对象），若第一参数小于（即先序于）第二参数则返回 ​true \\
+Example:
+\begin{lstlisting}[language=C++]
+std::set_intersection(v1.begin(),v1.end(),v2.begin(),v2.end(),std::back_inserter(v_intersection));
+	//v_intersection就是交集,back_insecter()用于vector
+\end{lstlisting}
+
+set\_union(first1,last1,first2,last2,d\_first,comp)
+同intersection

@@ -1,0 +1,195 @@
+\documentclass[10pt,UTF8,a4paper,twoside]{ctexart}
+
+\usepackage{listings}
+\usepackage{ctex}
+\usepackage{multicol}
+\usepackage{geometry}
+\usepackage{graphicx}
+\usepackage{subfigure}
+\usepackage{fancyhdr}
+\usepackage{appendix}
+\usepackage{xcolor}
+\usepackage{amsmath}
+\usepackage{amssymb}
+
+\geometry{a4paper,left=2cm,right=2cm,top=2cm,bottom=2cm}
+
+% 用来设置附录中代码的样式
+\lstset{
+	language			=	C++,
+    basicstyle          =   \ttfamily,          % 基本代码风格
+    keywordstyle        =   \bfseries\color{blue},          % 关键字风格
+    keywordstyle		=	[2] \color{teal},
+    commentstyle        =   \rmfamily\itshape\color{red},  % 注释的风格，斜体
+    stringstyle         =   \ttfamily\color{magenta},  % 字符串风格
+    flexiblecolumns,                % 别问为什么，加上这个
+    %numbers             =   left,   % 行号的位置在左边
+    showspaces          =   false,  % 是否显示空格，显示了有点乱，所以不现实了
+    %numberstyle         =   \zihao{-5}\ttfamily,    % 行号的样式，小五号，tt等宽字体
+    showstringspaces    =   false,
+    captionpos          =   t,      % 这段代码的名字所呈现的位置，t指的是top上面
+    frame               =   single,   % 显示边框
+    tabsize             =   4,
+    breaklines          =   true,
+    basewidth			=	0.5em,
+}
+
+\begin{document}
+
+\begin{figure}[h]
+\centering
+\includegraphics{scut.jpg}
+\end{figure}
+
+
+%% temporary titles
+% command to provide stretchy vertical space in proportion
+\newcommand\nbvspace[1][3]{\vspace*{\stretch{#1}}}
+% allow some slack to avoid under/overfull boxes
+\newcommand\nbstretchyspace{\spaceskip0.5em plus 0.25em minus 0.25em}
+% To improve spacing on titlepages
+\newcommand{\nbtitlestretch}{\spaceskip0.6em}
+\thispagestyle{empty}
+\begin{center}
+\bfseries
+\nbvspace[1]
+\Huge
+\centering
+{\nbtitlestretch\huge
+ICPC TEMPLATE}
+
+\begin{figure}[h]
+\centering
+\includegraphics[width=5cm,height=3cm]{ICPC.jpg}
+\end{figure}
+
+\nbvspace[1]
+\normalsize
+
+
+\nbvspace[1]
+\small BY\\
+\Large albertxwz\\[0.5em]
+\footnotesize School of Computer Science \& Engineering,\\
+South China University of Technology
+
+\nbvspace[2]
+
+%\includegraphics[width=1.5in]{./graphics/pic37}
+\nbvspace[3]
+\normalsize
+
+Published in\\
+\large
+Nov 2020
+\nbvspace[1]
+\end{center}
+
+\clearpage
+
+\newpage
+\begin{Large}
+This template is a supplementary version.
+\end{Large}
+\mbox{}
+\thispagestyle{empty}
+\newpage
+%*-----------------------------------------------------------------*
+%|                             正文                       	     |
+%*-----------------------------------------------------------------*
+\begin{multicols}{2}
+\columnseprule=0.5pt
+
+\renewcommand \contentsname{Contents}
+\tableofcontents
+\thispagestyle{empty}
+
+\clearpage
+
+
+\setcounter{page}{1}
+\pagestyle{headings}
+
+\section{Standard Solution Template}
+	\subsection{support bits/stdc++.h}
+		\lstinputlisting[language=C++]{stdtemp/sol1.cpp}
+	\subsection{unsupport bits/stdc++.h}
+		\lstinputlisting[language=C++]{stdtemp/sol2.cpp}
+	\subsection{Python Template}
+		\lstinputlisting[language=python]{stdtemp/sol.py}
+	
+\clearpage
+
+\section{Graph}
+	\subsection{Network Flow}
+		\subsubsection{Dinic}
+			\lstinputlisting[language=C++]{graph/Dinic.cpp}
+		\subsubsection{Edmonds-Karp}
+			\lstinputlisting[language=C++]{graph/Edmonds-Karp.cpp}
+	\subsection{DSU on Tree}
+\clearpage
+
+\section{Mathematics}
+	\subsection{Number Theory}
+		\subsubsection{Linear Inverse Modulo}
+			\lstinputlisting[language=C++]{math/NumberTheory/LinInvMod.cpp}
+		\subsubsection{M$\ddot{o}$bius Inversion}
+		\subsubsection{Dujiao Sieve}
+		\subsubsection{Min\_25 Sieve}
+		\subsubsection{Lucas' Theorem}
+			\begin{lstlisting}[language=C++]
+long long Lucas(long long n, long long m, long long p) {
+	if (m == 0) return 1;
+	return (C(n % p, m % p, p) * Lucas(n / p, m / p, p)) % p;
+}
+			\end{lstlisting}
+	\subsection{Karatsuba Multiply}
+		\lstinputlisting[language=C++]{math/karatsuba.cpp}
+	\subsection{Fast Fourier Transform}
+		\lstinputlisting[language=C++]{math/FFT.cpp}
+\clearpage
+
+\section{Data Structure}
+	\subsection{Treap}
+	\subsection{Splay Tree}
+	\subsection{Two-dimensional Segment Tree}
+\clearpage
+
+\section{String}
+	\subsection{KMP}
+		\lstinputlisting[language=C++]{string/KMP.cpp}
+\clearpage
+
+%*------------------------------------------------*
+%|						附录						|
+%*------------------------------------------------*
+
+\begin{appendices}
+	\section{Theorem}
+		\large
+		\subsection{Lucas' Theorem}
+			对于质数p,有
+			$$
+				\tbinom{n}{m} \ mod \ p = \tbinom{\lfloor n/p \rfloor}{\lfloor m/p \rfloor}
+				\cdot \tbinom{n \ mod \ p}{m \ mod \ p} \ mod \ p
+			$$
+		\subsection{Betty's Theorem}
+			如果两个无理数$a,b$满足：
+			$$ \frac{1}{a}+\frac{1}{b}=1$$
+			那么对于两个集合$A,B$:
+			$$A=\lbrace \lbrack na \rbrack \rbrace,B=\lbrace \lbrack nb \rbrack \rbrace$$
+			有下面两个结论：
+			$$A \bigcap B = \emptyset,A \bigcup B = \mathbb{N}^+$$
+	\section{C++ STL: set}
+		\large
+		set与undered\_set的区别在于有无在内部存储时有无顺序。
+		\subsection{Basic Method}
+			\input{appendix/stlset/basicmethod.txt}
+		\subsection{Advanced Method}
+			注：必须导入algorithm头文件
+			\input{appendix/stlset/advance.txt}
+		
+\end{appendices}
+
+\end{multicols}
+\end{document}
