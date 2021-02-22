@@ -1,6 +1,6 @@
 struct Edge {
 	int from, to, cap, flow;
-	Edge(int from, int to=0, int cap=0, int flow=0):
+	Edge(int from=0, int to=0, int cap=0, int flow=0):
 		from(from), to(to), cap(cap), flow(flow) {}
 };
 
@@ -9,9 +9,9 @@ vector<int> g[maxn];
 int d[maxn], cur[maxn];
 
 void addedge(int u, int v, int cap) {
-	edges.push_back(Edge(v, cap));
+	edges.push_back(Edge(u, v, cap));
 	g[u].push_back(edges.size()-1);
-	edges.push_back(Edge(u, 0));
+	edges.push_back(Edge(v, u, 0));
 	g[v].push_back(edges.size()-1);
 }
 
