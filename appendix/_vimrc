@@ -1,0 +1,60 @@
+" user configuration
+"set cindent
+"set autoindent
+"set nu rnu
+"set tabstop=4
+"set backspace=2
+"set vb t_vb=
+"se shiftwidth=4
+" set background=dark
+" inoremap ( ()<LEFT>
+" inoremap [ []<LEFT>
+" colorsheme evening
+syntax on
+color molokai
+se ai nu rnu bs=2 ts=4 sw=4
+se guifont=Consolas:b:h12
+imap {<CR> {<CR>}<ESC>O
+imap <F5> <ESC>:call Run()<CR>
+imap <C-S> <ESC>:w<CR>
+
+map <C-A>c ggvG$"+y
+map <C-A>v ggvG$"+p
+map <C-S> :w<CR>
+map <F5> :call Run()<CR>
+" if os is Linux, replace %<.exe with ./%<
+func! Run()
+	exec "w"
+	exec "!g++ -Wall -g % -o %<.exe"
+	exec "silent !%<.exe < my.in > my.out"
+endfunc
+
+map <F10> :call CaR()<CR>
+func! CaR()
+	exec "w"
+	exec "!g++ -Wall -g % -o %<.exe"
+	exec "!%<.exe"
+endfunc
+" Non
+map <F4> :call PY()<CR>
+func! PY()
+	exec "w"
+	exec "!python %"
+endfunc
+
+map <F6> :call Debug()<CR>
+func! Debug()
+	exec "w"
+	exec "silent !g++ -Wall -g % -o %<.exe"
+	exec "!gdb %<.exe"
+endfunc
+map <F7> :call Finderror()<CR>
+func! Finderror()
+	exec "w"
+	exec "silent !g++ -Wall -g test.cpp -o test.exe"
+	exec "silent !g++ -Wall -g % -o %<.exe"
+	exec "silent !%<.exe < my.in > my.out"
+	exec "silent !test.exe < my.in > ans.txt"
+	exec "!fc ans.txt my.out"
+endfunc
+
