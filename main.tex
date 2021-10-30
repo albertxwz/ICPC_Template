@@ -81,7 +81,7 @@ South China University of Technology
 
 Published in\\
 \large
-May 2021
+Dec 2021
 \nbvspace[1]
 \end{center}
 
@@ -133,9 +133,17 @@ This template is a supplementary version.
 	\subsection{Number Theory}
 		\subsubsection{Linear Inverse Modulo}
 			\lstinputlisting[language=C++]{math/NumberTheory/LinInvMod.cpp}
+		\subsubsection{Quick Power}
+			\lstinputlisting[language=C++]{math/NumberTheory/powmod.cpp}
+		\subsubsection{Baby-Step-Giant-Step Algorithm}
+			$$ a^{x}\ \equiv \ b \ (mod \ n)  $$
+			\lstinputlisting[language=C++]{math/NumberTheory/BSGS.cpp}
 		\subsubsection{M$\ddot{o}$bius Inversion}
 		\subsubsection{Dujiao Sieve}
 			常见积性函数：
+				$$\epsilon(n)=[n=1] $$
+				$$I(n)=1 $$
+				$$id(n)=n $$
 				$$d(x)=\sum_{i|n}{1}$$
 				$$\sigma(x)=\sum_{i|n}{i}$$
 				$$\phi(i)=\sum_{i|n}{[gcd(x,i)=1]}$$
@@ -145,16 +153,26 @@ This template is a supplementary version.
 					\begin{array}{rcl}
 						1 & & {x=1}\\
 						(-1)^k & & {\prod_{i=1}^{k}{q_i}=1}\\
-						0 & & {max{q_i} > 1)}\\
+						0 & & \max{\{q_i\}} > 1\\
 					\end{array} \right.
-				\end{equation}
+				\end{equation} \\\\
+			狄利克雷卷积：设$f, g$是两个数论函数，则有$(f\ast g)(n)=\sum_{d|n}{f(d)g(\frac{n}{d})}$ \\\\
+			常见性质：
+				$$ 1. \ \mu\ast I=\epsilon $$
+				$$ 2. \ \phi\ast I=id $$
+				$$ 3. \ \mu\ast id = \phi $$
 			最后要有形如：
 			$$g(1)S(1)=\sum_{i=1}^{n}{(f*g)(i)} - \sum_{i=2}^{n}{g(i)S(\lfloor \frac{n}{i} \rfloor)} $$
 			\lstinputlisting[language=C++]{math/NumberTheory/Dujiao.cpp}
-		\subsection{Chinese Remainder Theory}
-			\lstinputlisting{math/NumberTheory/CRT.cpp}
+		\subsubsection{Chinese Remainder Theory}
+			\lstinputlisting[language=C++]{math/NumberTheory/CRT.cpp}
+		\subsubsection{Floor Sum}
+			\lstinputlisting[language=C++]{math/NumberTheory/floorsum.cpp}
 		
 		\subsubsection{Min\_25 Sieve}
+		\subsubsection{$\pi(x)$}
+			$\pi(x)\sim \frac{x}{\ln x}$
+			\lstinputlisting[language=C++]{math/NumberTheory/NumberofPrime.cpp}
 		\subsubsection{Lucas' Theorem}
 			\begin{lstlisting}[language=C++]
 long long Lucas(long long n, long long m, long long p) {
@@ -166,6 +184,8 @@ long long Lucas(long long n, long long m, long long p) {
 		\lstinputlisting[language=C++]{math/karatsuba.cpp}
 	\subsection{Fast Fourier Transform}
 		\lstinputlisting[language=C++]{math/FFT.cpp}
+	\subsection{Number Theory Transform}
+		\lstinputlisting[language=C++]{math/NTT.cpp}
 	\subsection{Lagrange Insertion Value Method}
 		$$f(k)=\sum_{i=1}^{n}{y_i}\prod_{j \neq i}{\frac{k-x_j}{x_i-x_j}}$$
 		\lstinputlisting[language=C++]{math/lagrange.cpp}
@@ -184,6 +204,15 @@ long long Lucas(long long n, long long m, long long p) {
 		\lstinputlisting[language=C++]{string/KMP.cpp}
 	\subsection{Trie}
 		\lstinputlisting[language=C++]{string/Trie.cpp}
+\clearpage
+
+\section{Computational Geometry}
+	\subsection{2D Template}
+		\lstinputlisting[language=C++]{CompGeo/TwoDim.cpp}
+	\subsection{Smallest Covering Circle}
+		\lstinputlisting[language=C++]{CompGeo/mincircle.cpp}
+	\subsection{Half Plane Intersection}
+		\lstinputlisting[language=C++]{CompGeo/HalfPlaneIntersect.cpp}
 \clearpage
 
 %*------------------------------------------------*
@@ -214,9 +243,17 @@ long long Lucas(long long n, long long m, long long p) {
 			$$A=\lbrace \lbrack na \rbrack \rbrace,B=\lbrace \lbrack nb \rbrack \rbrace$$
 			有下面两个结论：
 			$$A \bigcap B = \emptyset,A \bigcup B = \mathbb{N}^+$$
+		\subsection{Bernoulli Number}
+			定义：$S(n, m) = \sum_{i=1}^{n}{i^m} \ (m > 0, \ n > 0)$
+			则必有：$S(n, m)=\frac{1}{m+1}\sum_{i=0}^{m}{\tbinom{m+1}{i}B_{i}n^{m+1-i}}$
+			其中：$B_n=-\frac{1}{n+1}\sum_{i=0}^{n-1}\tbinom{n+1}{i}B_i, \ B_0=1,\ B_1=\pm\frac{1}{2},\ B_2=\frac{1}{6},\ B_3=0,\ B_4=-\frac{1}{30}$ \\
+			一般来说，自然数幂求和要$B_1$取正数。另外，伯努利数和$\zeta(s)$有关，
+			$$ B_{2m} = \frac{2(-1)^{m-1}(2m)!}{(2\pi)^{2m}} \zeta(2m) $$
+			使用多项式求逆或者分治fft可以快速计算伯努利数，因为伯努利数满足
+			$$ \frac{x}{e^x-1} = \sum_{n=0}^{\infty}\frac{B_n}{n!}x^n = \frac{1}{\frac{e^x-1}{x}} $$
 	\section{C++ STL: set}
 		\large
-		set与undered\_set的区别在于有无在内部存储时有无顺序。
+		set与unordered\_set的区别在于有无在内部存储时有无顺序。
 		\subsection{Basic Method}
 			\input{appendix/stlset/basicmethod.txt}
 		\subsection{Advanced Method}

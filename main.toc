@@ -10,26 +10,36 @@
 \contentsline {section}{\numberline {3}Mathematics}{4}%
 \contentsline {subsection}{\numberline {3.1}Number Theory}{4}%
 \contentsline {subsubsection}{\numberline {3.1.1}Linear Inverse Modulo}{4}%
-\contentsline {subsubsection}{\numberline {3.1.2}M$\ddot {o}$bius Inversion}{4}%
-\contentsline {subsubsection}{\numberline {3.1.3}Dujiao Sieve}{4}%
-\contentsline {subsection}{\numberline {3.2}Chinese Remainder Theory}{4}%
-\contentsline {subsubsection}{\numberline {3.2.1}Min\_25 Sieve}{5}%
-\contentsline {subsubsection}{\numberline {3.2.2}Lucas' Theorem}{5}%
-\contentsline {subsection}{\numberline {3.3}Karatsuba Multiply}{5}%
-\contentsline {subsection}{\numberline {3.4}Fast Fourier Transform}{6}%
-\contentsline {subsection}{\numberline {3.5}Lagrange Insertion Value Method}{6}%
-\contentsline {section}{\numberline {4}Data Structure}{8}%
-\contentsline {subsection}{\numberline {4.1}Treap}{8}%
-\contentsline {subsection}{\numberline {4.2}Splay Tree}{8}%
-\contentsline {subsection}{\numberline {4.3}Two-dimensional Segment Tree}{8}%
-\contentsline {subsection}{\numberline {4.4}Mo's Algorithm}{8}%
-\contentsline {section}{\numberline {5}String}{10}%
-\contentsline {subsection}{\numberline {5.1}KMP}{10}%
-\contentsline {subsection}{\numberline {5.2}Trie}{10}%
-\contentsline {section}{\numberline {A}Env Conf}{11}%
-\contentsline {section}{\numberline {B}Theorem}{12}%
-\contentsline {subsection}{\numberline {B.1}Lucas' Theorem}{12}%
-\contentsline {subsection}{\numberline {B.2}Betty's Theorem}{12}%
-\contentsline {section}{\numberline {C}C++ STL: set}{13}%
-\contentsline {subsection}{\numberline {C.1}Basic Method}{13}%
-\contentsline {subsection}{\numberline {C.2}Advanced Method}{13}%
+\contentsline {subsubsection}{\numberline {3.1.2}Quick Power}{4}%
+\contentsline {subsubsection}{\numberline {3.1.3}Baby-Step-Giant-Step Algorithm}{4}%
+\contentsline {subsubsection}{\numberline {3.1.4}M$\ddot {o}$bius Inversion}{4}%
+\contentsline {subsubsection}{\numberline {3.1.5}Dujiao Sieve}{4}%
+\contentsline {subsubsection}{\numberline {3.1.6}Chinese Remainder Theory}{5}%
+\contentsline {subsubsection}{\numberline {3.1.7}Floor Sum}{5}%
+\contentsline {subsubsection}{\numberline {3.1.8}Min\_25 Sieve}{6}%
+\contentsline {subsubsection}{\numberline {3.1.9}$\pi (x)$}{6}%
+\contentsline {subsubsection}{\numberline {3.1.10}Lucas' Theorem}{6}%
+\contentsline {subsection}{\numberline {3.2}Karatsuba Multiply}{6}%
+\contentsline {subsection}{\numberline {3.3}Fast Fourier Transform}{7}%
+\contentsline {subsection}{\numberline {3.4}Number Theory Transform}{8}%
+\contentsline {subsection}{\numberline {3.5}Lagrange Insertion Value Method}{9}%
+\contentsline {section}{\numberline {4}Data Structure}{10}%
+\contentsline {subsection}{\numberline {4.1}Treap}{10}%
+\contentsline {subsection}{\numberline {4.2}Splay Tree}{10}%
+\contentsline {subsection}{\numberline {4.3}Two-dimensional Segment Tree}{10}%
+\contentsline {subsection}{\numberline {4.4}Mo's Algorithm}{10}%
+\contentsline {section}{\numberline {5}String}{12}%
+\contentsline {subsection}{\numberline {5.1}KMP}{12}%
+\contentsline {subsection}{\numberline {5.2}Trie}{12}%
+\contentsline {section}{\numberline {6}Computational Geometry}{13}%
+\contentsline {subsection}{\numberline {6.1}2D Template}{13}%
+\contentsline {subsection}{\numberline {6.2}Smallest Covering Circle}{13}%
+\contentsline {subsection}{\numberline {6.3}Half Plane Intersection}{13}%
+\contentsline {section}{\numberline {A}Env Conf}{15}%
+\contentsline {section}{\numberline {B}Theorem}{16}%
+\contentsline {subsection}{\numberline {B.1}Lucas' Theorem}{16}%
+\contentsline {subsection}{\numberline {B.2}Betty's Theorem}{16}%
+\contentsline {subsection}{\numberline {B.3}Bernoulli Number}{17}%
+\contentsline {section}{\numberline {C}C++ STL: set}{17}%
+\contentsline {subsection}{\numberline {C.1}Basic Method}{17}%
+\contentsline {subsection}{\numberline {C.2}Advanced Method}{17}%
