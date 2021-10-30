@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.999992 (TeX Live 2020/W32TeX) (preloaded format=xelatex 2020.11.15)  24 OCT 2021 22:07
+This is XeTeX, Version 3.14159265-2.6-0.999992 (TeX Live 2020/W32TeX) (preloaded format=xelatex 2020.11.15)  30 OCT 2021 12:58
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -722,11 +722,11 @@ Underfull \hbox (badness 10000) in paragraph at lines 158--161
 (./math/NumberTheory/Dujiao.cpp [4]) (./math/NumberTheory/CRT.cpp)
 (./math/NumberTheory/floorsum.cpp [5]) (./math/NumberTheory/NumberofPrime.cpp)
 (./math/karatsuba.cpp [6]) (./math/FFT.cpp [7]) (./math/NTT.cpp)
-(./math/lagrange.cpp [8]) [9] (./DS/Mo'sAlgorithm.cpp [10]) [11]
-(./string/KMP.cpp) (./string/Trie.cpp) [12] (./CompGeo/TwoDim.cpp)
-(./CompGeo/mincircle.cpp) (./CompGeo/HalfPlaneIntersect.cpp [13]) [14]
-(./appendix/_vimrc) (./appendix/launch.json [15]) (./appendix/tasks.json)
-(./appendix/c_cpp_properties.json) (./appendix/CMakeLists.txt) [16]
+(./math/lagrange.cpp [8]) [9] (./DS/Treap.cpp [10]) (./DS/Mo'sAlgorithm.cpp
+[11]) [12] (./string/KMP.cpp) (./string/Trie.cpp) [13] (./CompGeo/TwoDim.cpp)
+(./CompGeo/mincircle.cpp) (./CompGeo/HalfPlaneIntersect.cpp [14]) [15]
+(./appendix/_vimrc) (./appendix/launch.json [16]) (./appendix/tasks.json)
+(./appendix/c_cpp_properties.json) (./appendix/CMakeLists.txt) [17]
 (./appendix/stlset/basicmethod.txt
 Overfull \hbox (6.70894pt too wide) in paragraph at lines 27--28
 \TU/lmr/m/n/12 set \TU/SimSun(0)/m/n/12 中，|  返 回 值 是 \TU/lmr/m/n/12 pair<set<in
@@ -734,30 +734,30 @@ t>::iterator,bool>\TU/SimSun(0)/m/n/12 ，|
  []
 
 ) (./appendix/stlset/advance.txt
-Underfull \hbox (badness 7415) in paragraph at lines 260--2
+Underfull \hbox (badness 7415) in paragraph at lines 261--2
 []\TU/SimSun(0)/m/n/12 注：|  必 须 导 入 \TU/lmr/m/n/12 algorithm \TU/SimSun(0)/m/n/
 12 头 文 件
  []
 
 
-Overfull \hbox (34.87956pt too wide) in paragraph at lines 260--2
+Overfull \hbox (34.87956pt too wide) in paragraph at lines 261--2
 \TU/lmr/m/n/12 set_intersection(first1,last1,first2,last2,d_first,comp) 
  []
 
 Missing character: There is no ​ in font [lmroman12-regular]:mapping=tex-text;!
 )
-Overfull \hbox (28.45935pt too wide) in paragraph at lines 12--262
+Overfull \hbox (28.45935pt too wide) in paragraph at lines 12--263
 []\TU/lmr/m/n/12 set_union(first1,last1,first2,last2,d_first,comp)
  []
 
-[17] (./main.aux) ) 
+[18] (./main.aux) ) 
 Here is how much of TeX's memory you used:
- 12328 strings out of 479418
- 282562 string characters out of 5881944
+ 12357 strings out of 479418
+ 282838 string characters out of 5881944
  1106812 words of memory out of 5000000
- 29544 multiletter control sequences out of 15000+600000
+ 29570 multiletter control sequences out of 15000+600000
  539084 words of font info for 88 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
  56i,9n,68p,810b,1838s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on main.pdf (20 pages).
+Output written on main.pdf (21 pages).

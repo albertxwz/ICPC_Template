@@ -25,21 +25,21 @@
 \contentsline {subsection}{\numberline {3.5}Lagrange Insertion Value Method}{9}%
 \contentsline {section}{\numberline {4}Data Structure}{10}%
 \contentsline {subsection}{\numberline {4.1}Treap}{10}%
-\contentsline {subsection}{\numberline {4.2}Splay Tree}{10}%
-\contentsline {subsection}{\numberline {4.3}Two-dimensional Segment Tree}{10}%
-\contentsline {subsection}{\numberline {4.4}Mo's Algorithm}{10}%
-\contentsline {section}{\numberline {5}String}{12}%
-\contentsline {subsection}{\numberline {5.1}KMP}{12}%
-\contentsline {subsection}{\numberline {5.2}Trie}{12}%
-\contentsline {section}{\numberline {6}Computational Geometry}{13}%
-\contentsline {subsection}{\numberline {6.1}2D Template}{13}%
-\contentsline {subsection}{\numberline {6.2}Smallest Covering Circle}{13}%
-\contentsline {subsection}{\numberline {6.3}Half Plane Intersection}{13}%
-\contentsline {section}{\numberline {A}Env Conf}{15}%
-\contentsline {section}{\numberline {B}Theorem}{16}%
-\contentsline {subsection}{\numberline {B.1}Lucas' Theorem}{16}%
-\contentsline {subsection}{\numberline {B.2}Betty's Theorem}{16}%
-\contentsline {subsection}{\numberline {B.3}Bernoulli Number}{17}%
-\contentsline {section}{\numberline {C}C++ STL: set}{17}%
-\contentsline {subsection}{\numberline {C.1}Basic Method}{17}%
-\contentsline {subsection}{\numberline {C.2}Advanced Method}{17}%
+\contentsline {subsection}{\numberline {4.2}Splay Tree}{11}%
+\contentsline {subsection}{\numberline {4.3}Two-dimensional Segment Tree}{11}%
+\contentsline {subsection}{\numberline {4.4}Mo's Algorithm}{11}%
+\contentsline {section}{\numberline {5}String}{13}%
+\contentsline {subsection}{\numberline {5.1}KMP}{13}%
+\contentsline {subsection}{\numberline {5.2}Trie}{13}%
+\contentsline {section}{\numberline {6}Computational Geometry}{14}%
+\contentsline {subsection}{\numberline {6.1}2D Template}{14}%
+\contentsline {subsection}{\numberline {6.2}Smallest Covering Circle}{14}%
+\contentsline {subsection}{\numberline {6.3}Half Plane Intersection}{14}%
+\contentsline {section}{\numberline {A}Env Conf}{16}%
+\contentsline {section}{\numberline {B}Theorem}{17}%
+\contentsline {subsection}{\numberline {B.1}Lucas' Theorem}{17}%
+\contentsline {subsection}{\numberline {B.2}Betty's Theorem}{17}%
+\contentsline {subsection}{\numberline {B.3}Bernoulli Number}{18}%
+\contentsline {section}{\numberline {C}C++ STL: set}{18}%
+\contentsline {subsection}{\numberline {C.1}Basic Method}{18}%
+\contentsline {subsection}{\numberline {C.2}Advanced Method}{18}%
